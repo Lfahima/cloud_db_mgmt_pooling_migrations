@@ -1,0 +1,7 @@
+faker
+pandas
+flask
+python-dotenv
+sqlalchemy
+pymysql
+cryptography
