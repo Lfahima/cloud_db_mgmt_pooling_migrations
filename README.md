@@ -11,9 +11,10 @@ I created two tables, one table titled patient, which included id as the primary
 
 
 ## Document the steps and challenges encountered during the database migration process.
-#### Steps :
+#### Steps:
 I followed the steps for the database migration process provided by Professor Hants in the python files. 
 The first step I conducted was I updated the classes to reflect what I wanted, I then updated the engine connection detials. I then followed by running the migration init command. 
 I updated the alembic.ini file with the url. 
+#### Challenges: 
 The first migration I performed was on GCP, so I updated the env.py file to use the gcp file. from there I ran the migration. 
 At first I had issues with connecting to the database, but then I realized my connection stream was wrong and I fixed it. I also realized that my classes had incorrect column values, so I updated the classe in the file, and then droped the tables. I then created the tables again, inserted fake values in the tables, and re-ran the migration. After a successful run, I proceeded to perform the same migration on Azure and it also ran successfully.  
